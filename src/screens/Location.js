@@ -27,7 +27,7 @@ export default class App extends Component {
 
 			const resp = await Http.get('/geocode/json', {
 				params: {
-				key: 'AIzaSyAGXtphxDAmKEtULy86L6jkLnPZU1zB-08',
+				key: '<API KEY>',
 				//latlng: this.state.location.latitude + ',' + this.state.location.longitude
 				latlng: "-2.3132523,120.3049901"
 				}   

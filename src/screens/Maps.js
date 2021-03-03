@@ -30,7 +30,7 @@ class Maps extends Component{
         if(text.length > 5){
          const resp = await Http.get('/place/autocomplete/json', {
             params: {
-             key: 'AIzaSyAGXtphxDAmKEtULy86L6jkLnPZU1zB-08',
+             key: '<API KEY>',
              input: text
             }   
          });
@@ -75,7 +75,7 @@ class Maps extends Component{
      getGeoCodeInfo = async ()=>{
          const resp = await Http.get('/geocode/json', {
             params: {
-            key: 'AIzaSyAGXtphxDAmKEtULy86L6jkLnPZU1zB-08',
+            key: '<API KEY>',
             address: this.state.location
             }   
          });
